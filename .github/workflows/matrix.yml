@@ -6,7 +6,7 @@ jobs:
     matrix: 
       node-versions: [12,14,16]
       operating-systems: [ubuntu-latest,windows-latest]
-    runs-on: {{matrix.operating-system}}
+    runs-on: {{matrix.operating-systems}}
     steps:
       - name: Get code
         uses: actions/checkout@v4
